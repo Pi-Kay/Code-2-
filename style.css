@@ -1,0 +1,164 @@
+html {
+    box-sizing: border-box;
+    font-family: Open Sans;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  :root {
+      --dark-color:#ffffff;
+      --light-color: white;
+    }
+  
+  body {
+    font-family: Open Sans, sans-serif;
+    margin: 0px;
+    margin: 0px;
+  }
+
+  header {
+    color: #edf0f1;
+}
+
+  nav {
+      background-color: var( --light-color);
+      width: 100%;
+      height: 7em;
+      display: flex;
+      justify-content: space-between;
+      font-size: 21px;
+      margin: 0px 10px;
+      padding-left: 10px;
+      padding-right: 60px;
+      padding-top: 20px;
+    
+  }
+
+  nav * {
+      color: #949697;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-self: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    margin: 0px 20px;
+    align-self: flex-end;
+  }
+
+  #logo {
+    cursor: pointer;
+    justify-items: flex-start;
+    color: #030303;
+    margin-left: 20px;
+    color: rgb(199, 199, 199);
+    font-weight: bold;
+    font-size: 46px;
+  }
+
+  .topic {
+    text-align: center;
+  }
+    
+  .topic img{
+  
+    max-width:900px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body { font-family: sans-serif; }
+
+  /* ---- grid ---- */
+
+  .grid {
+    background: #EEE;
+    max-width: 1200px;
+  }
+
+  /* clearfix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- grid-item ---- */
+
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+
+  .grid-item {
+    height: 120px;
+    float: left;
+    background: rgb(174, 174, 177);
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+  }
+
+  .grid-item--width2 { width:  40%; }
+  .grid-item--width3 { width:  60%; }
+
+  .grid-item--height2 { height: 200px; }
+  .grid-item--height3 { height: 260px; }
+  .grid-item--height4 { height: 360px; }
+
+
+
+  $('.grid').masonry({
+    // set itemSelector so .grid-sizer is not used in layout
+    itemSelector: '.grid-item',
+    // use element for option
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  })
+
+
+  footer {
+    background-color: var(--dark-color);
+    color: #f2eeed;
+    height: 100px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    padding: 15px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-bottom: none;
+    color: rgb(201, 194, 194);
+    padding-bottom: 20px;
+  }
+  
+  footer p {
+    justify-self: flex-end;
+    text-align: right;
+    padding: 12px;
+    color: rgb(223, 223, 223);
+  }
+
+
+  footer a {
+    text-decoration: none;
+    color: rgb(139, 123, 123);
+    font-weight: bold;
+    font-size: 46px;
+  }
+
+  footer a:hover {
+    color: orange;s
+  }
